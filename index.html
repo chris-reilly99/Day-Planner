@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Assets/style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Day Planner</h1>
+      <p class="lead">A simple calendar app for scheduling your day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+      <!-- inputs need an id, button needs an id -->
+      <!-- 12 am -->
+      <div class="input-group mb-3" id="12a">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">12 am</span>
+        </div>
+        <input type="text" class="form-control hour" placeholder="12 am events" aria-label="12 am events" aria-describedby="button-addon2" data-hour="00" id="t00">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" data-btn="00" id="b00">Save</button>
+        </div>
+      </div>
+      <!-- 1 am -->
+      <div class="input-group mb-3" id="1a">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">1 am</span>
+        </div>
+        <input type="text" class="form-control hour" placeholder="1 am events" aria-label="1 am events" aria-describedby="button-addon2" data-hour="01" id="t01">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" data-btn="01" id="b01">Save</button>
+        </div>
+      </div>
+      <!-- 2 am -->
+      <div class="input-group mb-3" id="2a">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">2 am</span>
+        </div>
+        <input type="text" class="form-control hour" placeholder="2 am events" aria-label="2 am events" aria-describedby="button-addon2" data-hour="02" id="t02">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" data-btn="02" id="b02">Save</button>
+        </div>
+      </div>
+      <!-- 3 am -->
+      <div class="input-group mb-3" id="3a">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">3 am</span>
+        </div>
+        <input type="text" class="form-control hour" placeholder="3 am events" aria-label="3 am events" aria-describedby="button-addon2" data-hour="03" id="t03">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" data-btn="03" id="b03">Save</button>
+        </div>
+      </div>
+      <!-- 4 am -->
+      <div class="input-group mb-3" id="4a">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">4 am</span>
+        </div>
+        <input type="text" class="form-control hour" placeholder="4 am events" aria-label="4 am events" aria-describedby="button-addon2" data-hour="04" id="t04">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" data-btn="04" id="b04">Save</button>
+        </div>
+      </div>
+      <!-- 5 am -->
+      <div class="input-group mb-3" id="5a">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">5 am</span>
+        </div>
+        <input type="text" class="form-control hour" placeholder="5 am events" aria-label="5 am events" aria-describedby="button-addon2" data-hour="05" id="t05">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" data-btn="05" id="b05">Save</button>
+        </div>
+      </div>
+      <!-- 6 am -->
+      <div class="input-group mb-3" id="6a">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">6 am</span>
+        </div>
+        <input type="text" class="form-control hour" placeholder="6 am events" aria-label="6 am events" aria-describedby="button-addon2" data-hour="06" id="t06">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" data-btn="06" id="b06">Save</button>
+        </div>
+      </div>
+      <!-- 7 am -->
+      <div class="input-group mb-3" id="7a">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">7 am</span>
+        </div>
+        <input type="text" class="form-control hour" placeholder="7 am events" aria-label="7 am events" aria-describedby="button-addon2" data-hour="07" id="t07">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" data-btn="07" id="b07">Save</button>
+        </div>
+      </div>
+      <!-- 8 am -->
+      <div class="input-group mb-3" id="8a">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">8 am</span>
+        </div>
+        <input type="text" class="form-control hour" placeholder="8 am events" aria-label="8 am events" aria-describedby="button-addon2" data-hour="08" id="t08">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" data-btn="08" id="b08">Save</button>
+        </div>
+      </div>
+      <!-- 9 am -->
+      <div class="input-group mb-3" id="9a">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">9 am</span>
+        </div>
+        <input type="text" class="form-control hour" placeholder="9 am events" aria-label="9 am events" aria-describedby="button-addon2" data-hour="09" id="t09">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" data-btn="09" id="b09">Save</button>
+        </div>
+      </div>
+      <!-- 10 am -->
+      <div class="input-group mb-3" id="10a">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">10 am</span>
+        </div>
+        <input type="text" class="form-control hour" placeholder="10 am events" aria-label="10 am events" aria-describedby="button-addon2" data-hour="10" id="t10">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" data-btn="10" id="b10">Save</button>
+        </div>
+      </div>
+      <!-- 11 am -->
+      <div class="input-group mb-3" id="11a">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">11 am</span>
+        </div>
+        <input type="text" class="form-control hour" placeholder="11 am events" aria-label="11 am events" aria-describedby="button-addon2" data-hour="11" id="t11">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" data-btn="11" id="b11">Save</button>
+        </div>
+      </div>
+      <!-- PM -->
+      <!-- 12 pm -->
+      <div class="input-group mb-3" id="12p">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">12 pm</span>
+        </div>
+        <input type="text" class="form-control hour" placeholder="12 pm events" aria-label="12 pm events" aria-describedby="button-addon2" data-hour="12" id="t12">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" data-btn="12" id="b12">Save</button>
+        </div>
+      </div>
+      <!-- 1 pm -->
+      <div class="input-group mb-3" id="1p">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">1 pm</span>
+        </div>
+        <input type="text" class="form-control hour" placeholder="1 pm events" aria-label="1 pm events" aria-describedby="button-addon2" data-hour="13" id="t13">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" data-btn="13" id="b13">Save</button>
+        </div>
+      </div>
+      <!-- 2 pm -->
+      <div class="input-group mb-3" id="2p">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">2 pm</span>
+        </div>
+        <input type="text" class="form-control hour" placeholder="2 pm events" aria-label="2 pm events" aria-describedby="button-addon2" data-hour="14" id="t14">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" data-btn="14" id="b14">Save</button>
+        </div>
+      </div>
+      <!-- 3 pm -->
+      <div class="input-group mb-3" id="3p">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">3 pm</span>
+        </div>
+        <input type="text" class="form-control hour" placeholder="3 pm events" aria-label="3 pm events" aria-describedby="button-addon2" data-hour="15" id="t15">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" data-btn="15" id="b15">Save</button>
+        </div>
+      </div>
+      <!-- 4 pm -->
+      <div class="input-group mb-3" id="4p">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">4 pm</span>
+        </div>
+        <input type="text" class="form-control hour" placeholder="4 pm events" aria-label="4 pm events" aria-describedby="button-addon2" data-hour="16" id="t16">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" data-btn="16" id="b16">Save</button>
+        </div>
+      </div>
+      <!-- 5 pm -->
+      <div class="input-group mb-3" id="5p">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">5 pm</span>
+        </div>
+        <input type="text" class="form-control hour" placeholder="5 pm events" aria-label="5 pm events" aria-describedby="button-addon2" data-hour="17" id="t17">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" data-btn="17" id="b17">Save</button>
+        </div>
+      </div>
+      <!-- 6 pm -->
+      <div class="input-group mb-3" id="6p">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">6 pm</span>
+        </div>
+        <input type="text" class="form-control hour" placeholder="6 pm events" aria-label="6 pm events" aria-describedby="button-addon2" data-hour="18" id="t18">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" data-btn="18" id="b18">Save</button>
+        </div>
+      </div>
+      <!-- 7 pm -->
+      <div class="input-group mb-3" id="7p">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">7 pm</span>
+        </div>
+        <input type="text" class="form-control hour" placeholder="7 pm events" aria-label="7 pm events" aria-describedby="button-addon2" data-hour="19" id="t19">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" data-btn="19" id="b19">Save</button>
+        </div>
+      </div>
+      <!-- 8 pm -->
+      <div class="input-group mb-3" id="8p">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">8 pm</span>
+        </div>
+        <input type="text" class="form-control hour" placeholder="8 pm events" aria-label="8 pm events" aria-describedby="button-addon2" data-hour="20" id="t20">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" data-btn="20" id="b20">Save</button>
+        </div>
+      </div>
+      <!-- 9 pm -->
+      <div class="input-group mb-3" id="9p">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">9 pm</span>
+        </div>
+        <input type="text" class="form-control hour" placeholder="9 pm events" aria-label="9 pm events" aria-describedby="button-addon2" data-hour="21" id="t21">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" data-btn="21" id="b21">Save</button>
+        </div>
+      </div>
+      <!-- 10 pm -->
+      <div class="input-group mb-3" id="10p">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">10 pm</span>
+        </div>
+        <input type="text" class="form-control hour" placeholder="10 pm events" aria-label="10 pm events" aria-describedby="button-addon2" data-hour="22" id="t22">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" data-btn="22" id="b22">Save</button>
+        </div>
+      </div>
+      <!-- 11 pm -->
+      <div class="input-group mb-3" id="11p">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">11 pm</span>
+        </div>
+        <input type="text" class="form-control hour" placeholder="11 pm events" aria-label="11 pm events" aria-describedby="button-addon2" data-hour="23" id="t23">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" data-btn="23" id="b23">Save</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./Assets/script.js"></script>
+  </body>
+</html>
